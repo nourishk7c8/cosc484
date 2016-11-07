@@ -1,0 +1,38 @@
+ul li{
+	list-style: none; 
+	display: inline;
+	padding :0.5em;
+}
+
+footer a{
+	color: #3399FF;
+}
+
+/* rules for phones */
+@media only screen and (max-width:480px)
+{
+
+}
+
+/* CSS rules for tabletsand desktops*/
+@media only screen and (min-width: 481px)
+{
+	nav {
+	float: left;
+	width: 33%;
+	margin: 0.5em 0.5em 0.5em 0.5em;
+	padding: 0em 0em 0em 0em;
+	}
+
+	form{
+		margin-left: 33%;
+		margin-right: 33%;
+	}
+
+	aside{
+		float: right;
+		width: 33%;
+		margin: 0.5em 0.5em 0.5em 0.5em;
+		padding: 0em 0em 0em 0em;
+	}
+}

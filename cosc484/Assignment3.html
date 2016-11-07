@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head lang = "en">
+	<meta charset="utf-8" name="viewport" content="width=device-width" />
+	
+	<title>Subscribe!</title>
+	<link rel="stylesheet" href="reset.css"/>
+	<link rel="stylesheet" href="Assignment1.css"/>
+	<link rel="stylesheet" href="Assignment3.css"/>
+	<script type="text/javascript" src = "Assignment3.js"></script>
+</head>
+
+<body>
+	<header>
+		<div style= "color:goldenrod"><h1><u>Egyptian Mythology</u></h1></div>
+		<br>
+	</header>
+	<div id="container">
+	<nav>
+		<ol>
+			<li><a href="Assignment1.html">Home</a></li>
+			<li><a href="Assignment1.html#overview">Overview</a></li>
+			<li><a href="Assignment1.html#gods">Deities</a></li>
+			<li><a href="Assignment1.html#myths">Major Myths</a></li>
+			<li><a href="MerchData.html">Merchandise</a></li>
+			<li><a href="Artists.html">Artists</a></li>
+		</ol>
+	</nav>
+	
+	<aside>
+		<p>Every now and again our local Mythology clubs meet up! We have meet and greets, and different clubs engage in different activities.
+		The Egyptian Mythology clubs often volunteer at local animal shelters! Given that the Egyptians revered and worshipped cats, we often 
+		volunteer with cat shelters. 
+		<br>
+		<br>
+		Fun fact: Washington D.C. has a cat cafe! It's a little cafe where you can get coffee or snacks, and there are cats everywhere for you to cuddle with!
+		The cats are adoptable, and you can buy snacks to feed the cats.
+		</p>
+	</aside>
+	
+	<form method="get" action="http://www.randyconnolly.com/tests/process.php" id= "createaccount" onsubmit="return validate()">
+		<fieldset>
+			<legend>Create an account:</legend>
+			<p>
+				<label>Username</label>
+				<input type="text" name="usrnm" id="usrnm"/>
+			</p>
+			<p>
+				<label>Password</label>
+				<input type="password" name="pw" id="pw"/>
+			</p>
+			<p>
+				<label>Email</label>
+				<input type="email" name="email" id="email"/>
+			</p>
+			<p>
+				<label>Date of Birth</label>
+				<input type="date" name = "dob" id="dob">
+			</p>
+			<p>
+				<label>Age</label>
+				<input type = "number" name = "age" id = "age"/>
+			</p>
+			<p>
+				<label>Get notifications via email?</label>
+				<br>
+				<input type="checkbox" name = "notif" id="notif" value = "updates">Updates? <br>
+				<input type="checkbox" name = "notif" id="notif" value = "localmeet">Local meetups? <br>
+				<input type="checkbox" name = "notif" id="notif" value = "events">Events? <br>
+				<input type="checkbox" name = "notif" id="notif" value = "none"> No updates! <br>
+				
+			</p>
+			<p>
+				<label>Gender</label> <br>
+				<input type="radio" name = "gtype" id="gtype" value="female">Female <br>
+				<input type="radio" name = "gtype" id="gtype" value="male">Male <br>
+				<input type="radio" name = "ctype" id="gtype" value="andro">Genderqueer/Androgynous <br>
+				<input type="radio" name = "gtype" id="gtype" value="transgen">Trans<br>
+				<input type="radio" name = "gtype" id="gtype" value="notsay">I'd rather not say <br>
+				<input type="radio" name = "gtype" id="gtype" value="other">Other (please specify)<input type="text" name="gtype-other" id = "gtype-other"/>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​ <br>
+			</p>
+			<p>
+				<label>Favorite Mythology (CTRL + click to select more than one)</label>
+				<select name= "myths[]" id = "myths[]" ><!--multiple= "multiple" size = 6-->
+				<optgroup label ="African"/>
+						<option value = "egyptian">Egyptian</option>
+						<option value = "nubian">Nubian</option>
+						<option value = "zulu">Zulu</option>
+						<option value = "yoruba">Yoruba</option>
+					<optgroup label="Euro"/>
+						<option value="greek">Greek</option>
+						<option value="roman">Roman</option>
+						<option value = "norse">Norse</option>
+						<option value ="welsh">Welsh</option>
+					<optgroup label="Indigenous American"/>
+						<option value = "inuit">Inuit</option>
+						<option value ="iroquois">Iroquois</option>
+						<option value = "cherokee">Cherokee</option>
+						<option value ="mayan">Mayan</option>
+						<option value =" aztec">Aztec</option>
+					<optgroup label ="Asian"/>
+						<option value = "chinese">Chinese</option>
+						<option value = "korean">Korean</option>
+						<option value = "japanese">Japanese</option>
+						<option value = "buddhist">Buddhist</option>
+						<option value ="islamic">Islamic</option>
+						<option value = "hindu">Hindu</option>
+						<option value = "persian">Persian</option>
+				</select>
+			</p>			
+			<p>
+				<label>Background Color </label>
+				 <!-- name is for php, id is for Javascript-->
+				<input type="color" name="black" id="black"/>
+			</p>
+			<p>
+				<label> Comments? </label>
+				<textarea name="comment" placeholder="Enter text here..."></textarea>
+			</p>
+			<input type = "reset">
+			<input type="submit">
+		</fieldset>		
+	</form>
+	
+	</div> <!-- div container -->
+	
+	<footer>
+		<p><small> 
+		<ul>
+			<li><a href="Assignment1.html">Home</a></li>
+			<li><a href="Assignment1.html#overview">Overview</a></li>
+			<li><a href="Assignment1.html#gods">Deities</a></li>
+			<li><a href="Assignment1.html#myths">Major Myths</a></li>
+			<li><a href="Assignment3.html">Create an account with us!</a></li>
+			<li><a href="MerchData.html">Merchandise</a></li>
+			<li><a href="Artists.html">Artists</a></li>
+		</ul>
+		</small>
+		</p>
+	</footer>
+	
+</body>
+
+
+
+</html>
